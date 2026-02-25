@@ -7,26 +7,134 @@
     <title>Clean X</title>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="./src/global.css">
-    <script src="https://kit.fontawesome.com/d6660c7c66.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/Vector.svg" type="image/svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1302b1f6cc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav>
-        <div class="my-container">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            
+    <nav class="py-5 bg-white mt-6">
+        <div class="my-container flex justify-between items-center">
+
+            <div class="flex items-center gap-10">
+                <a href="#">
+                    <img src="./img/IMAGE.svg" alt="Cleaning X">
+                </a>
+                <div class="hidden lg:flex items-center gap-5.5">
+                    <a href="#" class="font-normal text-[17px] text-[#211F54] leading-7.5">Home</a>
+                    <a href="#about" class="font-normal text-[17px] text-[#211F54] leading-7.5">About</a>
+                    <a href="#service" class="font-normal text-[17px] text-[#211F54] leading-7.5">Services</a>
+                    <a href="#articles" class="font-normal text-[17px] text-[#211F54] leading-7.5">Articles</a>
+                    <a href="#contact" class="font-normal text-[17px] text-[#211F54] leading-7.5">Contact</a>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <span class="font-normal text-[17px] text-[#211F54] leading-7.5">Cart(0)</span>
+                <button class="navbtn hidden min-[480px]:block">
+                    Get a free quote
+                </button>
+                <button id="menu" class="block lg:hidden cursor-pointer p-2">
+                    <i class="fa-solid fa-bars w-17" style="color: rgb(25, 66, 231);"></i>
+                </button>
+            </div>
+
         </div>
     </nav>
+    <!-- home section -->
+    <section id="home"
+        class="flex flex-col lg:flex-row items-center gap-8 lg:gap-10 pt-10 pb-10 lg:pt-15 lg:pb-15 lg:min-h-screen my-container">
+        <div class="flex-1 text-center lg:text-left">
+            <h1
+                class="text-[32px] md:text-[48px] lg:text-[68px] font-bold leading-[38px] md:leading-[54px] lg:leading-[74px] text-[#211F54] mb-4 lg:mb-5">
+                Quality cleaning <br> for your home
+            </h1>
+            <p
+                class="text-[15px] md:text-[17px] leading-6 md:leading-7 text-[#6E6C83] mb-6 lg:mb-9 max-w-[470px] mx-auto lg:mx-0">
+                Condimentum mauris sit cursus amet id non
+                neque pharetra
+                nulla ornare sed facilisis senectus dapibus nibh
+                ultrices eget suscipit aliquet et nulla magna lacus penatibus.</p>
+            <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center lg:justify-start">
+                <button class="navbtn">Get a free quote</button>
+                <div class="flex items-center gap-3">
+                    <div
+                        class="bg-white border border-[#DCDDEB] rounded-[50%] p-3.5 shadow-md flex items-center justify-center">
+                        <img src="./img/telfon.svg" alt="telfon" class="w-6 h-6">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-[12px] font-normal text-[#6E6C83] uppercase tracking-wide">CALL US NOW</span>
+                        <span class="text-[18px] font-bold text-[#211F54] leading-6">(414) 567 - 2109</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 flex justify-center items-center">
+            <img src="./img/aboutimg.png" alt="Cleaning X" class="max-w-full h-auto">
+        </div>
+    </section>
+    <!-- about section -->
+    <section id="about" class="py-12 md:py-16 lg:py-20">
+        <div class="my-container">
+            <div class="flex flex-col items-center text-center mb-10 md:mb-14 lg:mb-16">
+                <h2
+                    class="font-bold text-[28px] md:text-[36px] lg:text-[48px] text-[#211F54] leading-9 md:leading-11.5 lg:leading-14.5 mb-3 md:mb-4">
+                    About Us</h2>
+                <p
+                    class="text-[#6E7191] font-normal text-[16px] md:text-[18px] lg:text-[21px] leading-7 md:leading-7.5 max-w-150">
+                    Sagittis nibh scelerisque vitae eget vulputate sem elementum sed
+                    neque nisi felis non ultrices massa id egestas quam velit pretium nu.</p>
+            </div>
+            <!-- card-->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8">
+                <div class="flex flex-col items-center text-center px-4">
+                    <img src="./img/about_calendar.svg" alt="Schedule online" class="mb-6 md:mb-8 lg:mb-10">
+                    <h5
+                        class="font-bold text-[20px] md:text-[24px] lg:text-[28px] leading-8 lg:leading-9 text-[#211F54]">
+                        1. Schedule online</h5>
+                    <p
+                        class="font-normal text-[16px] md:text-[18px] lg:text-[21px] leading-7 md:leading-7.5 text-[#6E7191] mt-3 md:mt-4">
+                        Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n.</p>
+                </div>
+                <div class="flex flex-col items-center text-center px-4">
+                    <img src="./img/aboutcard.svg" alt="Pay online easily" class="mb-6 md:mb-8 lg:mb-10">
+                    <h5
+                        class="font-bold text-[20px] md:text-[24px] lg:text-[28px] leading-8 lg:leading-9 text-[#211F54]">
+                        2. Pay online easily</h5>
+                    <p
+                        class="font-normal text-[16px] md:text-[18px] lg:text-[21px] leading-7 md:leading-7.5 text-[#6E7191] mt-3 md:mt-4">
+                        Vitae ut accumsan blandit ullamcorperolm suscipit dui gravida amet at nunc.</p>
+                </div>
+                <div class="flex flex-col items-center text-center px-4">
+                    <img src="./img/aboutcar.svg" alt="Get your house cleaned" class="mb-6 md:mb-8 lg:mb-10">
+                    <h5
+                        class="font-bold text-[20px] md:text-[24px] lg:text-[28px] leading-8 lg:leading-9 text-[#211F54]">
+                        3. Get your house cleaned</h5>
+                    <p
+                        class="font-normal text-[16px] md:text-[18px] lg:text-[21px] leading-7 md:leading-7.5 text-[#6E7191] mt-3 md:mt-4">
+                        Nunc maecenas sollicitudin metus tellus mattis sed porttitor cursus eleifend.</p>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-7 mt-10 md:mt-14">
+                <button class="navbtn">Get a free quote</button>
+                <button
+                    class="font-normal border border-[#EFF0F6] px-7 py-3 rounded-xl cursor-pointer text-[18px] leading-5 text-[#211F54] hover:bg-[#F7F7FC] transition-colors">Explore
+                    services</button>
+            </div>
+        </div>
+    </section>
+    <section id="Services" class="w-full h-screen"></section>
+    <section id="articles" class="w-full h-screen"></section>
+    <section id="contact" class="w-full h-screen"></section>
 
+    <a class="w-17.5 h-17.5 rounded-[50%] bg-[#0075FF] fixed left-5 bottom-5 flex items-center justify-center" href="#">
+        <i class="fa-solid fa-angle-up text-white text-[30px]"></i>
+    </a>
 
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
