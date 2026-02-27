@@ -25,7 +25,30 @@ body {
     background-color: #005ecf;
 }
 
-#menu.active {
-    transform: scale(1);
-    opacity: 0.8;
+.srcollbtn {
+    opacity: 0;
+    transition: opacity .3s ease-in, transform .3s ease-in;
+    transform: translateY(-40px);
+}
+
+.srcollbtn.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.mobile-menu {
+    transition: .3s linear;
+    position: fixed;
+    background-color: greenyellow;
+    width: 100%;
+    height: auto;
+    transform: translateY(-140%);
+    z-index: 0;
+    box-shadow: #14142B0A;
+    border-radius: 2%;
+}
+
+.mobile-menu.active {
+    transform: translateY(0);
 }

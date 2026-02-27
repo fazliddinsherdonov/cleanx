@@ -1,8 +1,24 @@
 
+let menuBtn = document.getElementById("menu");
+let mobileMenu = document.querySelector(".mobile-menu");
+let navHeight = document.querySelector(".nav");
+let srcollbtn = document.getElementById("srcollbtn");
 
-let menu = document.getElementById("menu");
+window.addEventListener("scroll", function () {
+    if (window.scrollY <= 180) {
+        srcollbtn.classList.remove("active");
+    } else {
+        srcollbtn.classList.add("active");
+    }
+});
 
-menu.addEventListener("click", function () {
-    this.classList.toggle("active");
-    console.log(menu);
+window.addEventListener("scroll", function () {
+    if (window.menuBtn <= 80) {
+        menuBtn.classList.remove("active");
+    } else {
+        menuBtn.classList.add("active");
+    }
+});
+menuBtn.addEventListener("click", function () {
+    mobileMenu.classList.toggle("active");
 });

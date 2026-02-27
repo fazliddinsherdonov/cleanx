@@ -32,18 +32,36 @@
                 </div>
             </div>
 
-            <div class="flex items-center gap-6">
+            <div class=" hidden min-[480px]: flex items-center gap-6">
                 <span class="font-normal text-[17px] text-[#211F54] leading-7.5">Cart(0)</span>
                 <button class="navbtn hidden min-[480px]:block">
                     Get a free quote
                 </button>
-                <button id="menu" class="block lg:hidden cursor-pointer p-2">
-                    <i class="fa-solid fa-bars w-17" style="color: rgb(25, 66, 231);"></i>
-                </button>
             </div>
+            <button id="menu" class="block lg:hidden cursor-pointer p-2">
+                <i class="fa-solid text-[18px] fa-bars w-17" style="color: rgb(25, 66, 231);"></i>
+            </button>
+
+
+        </div>
 
         </div>
     </nav>
+    <section class="mobile-menu max-w-28  ">
+        <div class="flex items-center  flex-col gap-1">
+            <a href="#" class="font-normal text-[12px] text-[#211F54] leading-7.5">Home</a>
+            <a href="#about" class="font-normal text-[12px] text-[#211F54] leading-7.5">About</a>
+            <a href="#service" class="font-normal text-[12px] text-[#211F54] leading-7.5">Services</a>
+            <a href="#articles" class="font-normal text-[12px] text-[#211F54] leading-7.5">Articles</a>
+            <a href="#" class="font-normal text-[12px] text-[#211F54] leading-7.5">Contact</a>
+        </div>
+        <div class="flex items-center justify-center flex-col my-5 gap-6">
+            <span class="font-normal text-[10px] text-[#211F54] leading-7.5">Cart(0)</span>
+            <button id="menubars"
+                class="cursor-pointer py-1 px-1 bg-[#0075FF] font-normal text-[10px] text-[#FFFFFF] leading-4.5 rounded-[14px]">Get
+                a free quote</button>
+        </div>
+    </section>
     <!-- home section -->
     <section id="home"
         class="flex flex-col lg:flex-row items-center gap-8 lg:gap-10 pt-10 pb-10 lg:pt-15 lg:pb-15 lg:min-h-screen my-container">
@@ -61,14 +79,18 @@
             <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center lg:justify-start">
                 <button class="navbtn">Get a free quote</button>
                 <div class="flex items-center gap-3">
-                    <div
-                        class="bg-white border border-[#DCDDEB] rounded-[50%] p-3.5 shadow-md flex items-center justify-center">
-                        <img src="./img/telfon.svg" alt="telfon" class="w-6 h-6">
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-[12px] font-normal text-[#6E6C83] uppercase tracking-wide">CALL US NOW</span>
-                        <span class="text-[18px] font-bold text-[#211F54] leading-6">(414) 567 - 2109</span>
-                    </div>
+                    <a href="tel:+(414) 567 - 2109"
+                        class="flex items-center gap-4 cursor-pointer hover:opacity-80 transition-opacity">
+                        <div
+                            class="bg-white border border-[#DCDDEB] rounded-[50%] p-3.5 shadow-md flex items-center justify-center">
+                            <img src="./img/telfon.svg" alt="telfon" class="w-6 h-6">
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[12px] font-normal text-[#6E6C83] uppercase tracking-wide">CALL US
+                                NOW</span>
+                            <span class="text-[18px] font-bold text-[#211F54] leading-6">(414) 567 - 2109</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -130,7 +152,9 @@
     <section id="articles" class="w-full h-screen"></section>
     <section id="contact" class="w-full h-screen"></section> -->
 
-    <a class="w-17.5 h-17.5 rounded-[50%] bg-[#0075FF] fixed left-5 bottom-5 flex items-center justify-center" href="#">
+    <a id="srcollbtn"
+        class="srcollbtn w-17.5 h-17.5  rounded-[50%] bg-[#0075FF] fixed left-5 bottom-5 flex items-center justify-center"
+        href="#">
         <i class="fa-solid fa-angle-up text-white text-[30px]"></i>
     </a>
 
