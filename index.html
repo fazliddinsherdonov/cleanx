@@ -18,7 +18,6 @@
 <body>
     <nav class="py-5 bg-white mt-6">
         <div class="my-container flex justify-between items-center">
-
             <div class="flex items-center gap-10">
                 <a href="#">
                     <img src="./img/IMAGE.svg" alt="Cleaning X">
@@ -32,23 +31,20 @@
                 </div>
             </div>
 
-            <div class=" hidden min-[480px]: flex items-center gap-6">
-                <span class="font-normal text-[17px] text-[#211F54] leading-7.5">Cart(0)</span>
-                <button class="navbtn hidden min-[480px]:block">
+            <div class="flex  items-center gap-6">
+                <span class="font-normal text-[17px] hidden min-[880px]:block text-[#211F54] leading-7.5">Cart(0)</span>
+                <button class="navbtn hidden min-[880px]:block">
                     Get a free quote
                 </button>
+                <button id="menu" class=" hiddenblock lg:hidden cursor-pointer p-2">
+                    <i class="fa-solid text-[18px] fa-bars w-17" style="color: rgb(25, 66, 231);"></i>
+                </button>
             </div>
-            <button id="menu" class="block lg:hidden cursor-pointer p-2">
-                <i class="fa-solid text-[18px] fa-bars w-17" style="color: rgb(25, 66, 231);"></i>
-            </button>
-
-
-        </div>
-
         </div>
     </nav>
-    <section class="mobile-menu max-w-28  ">
-        <div class="flex items-center  flex-col gap-1">
+
+    <section class="mobile-menu max-w-25">
+        <div class="flex items-center flex-col gap-1">
             <a href="#" class="font-normal text-[12px] text-[#211F54] leading-7.5">Home</a>
             <a href="#about" class="font-normal text-[12px] text-[#211F54] leading-7.5">About</a>
             <a href="#service" class="font-normal text-[12px] text-[#211F54] leading-7.5">Services</a>
@@ -58,26 +54,28 @@
         <div class="flex items-center justify-center flex-col my-5 gap-6">
             <span class="font-normal text-[10px] text-[#211F54] leading-7.5">Cart(0)</span>
             <button id="menubars"
-                class="cursor-pointer py-1 px-1 bg-[#0075FF] font-normal text-[10px] text-[#FFFFFF] leading-4.5 rounded-[14px]">Get
-                a free quote</button>
+                class="cursor-pointer py-1 px-1 bg-[#0075FF] font-normal text-[10px] text-[#FFFFFF] leading-4.5 rounded-[14px]">
+                Get a free quote
+            </button>
         </div>
     </section>
-    <!-- home section -->
+
     <section id="home"
-        class="flex flex-col lg:flex-row items-center gap-8 lg:gap-10 pt-10 pb-10 lg:pt-15 lg:pb-15 lg:min-h-screen my-container">
+        class="flex flex-col lg:flex-row items-center gap-8 lg:gap-10 pt-10 pb-10 lg:pt-15 lg:pb-15 lg:min-h-screen home-container">
+
         <div class="flex-1 text-center lg:text-left">
             <h1
-                class="text-[32px] md:text-[48px] lg:text-[68px] font-bold leading-[38px] md:leading-[54px] lg:leading-[74px] text-[#211F54] mb-4 lg:mb-5">
+                class="text-[32px] md:text-[48px] lg:text-[68px] font-bold leading-9.5 md:leading-13.5 lg:leading-18.5 text-[#211F54] mb-4 lg:mb-5">
                 Quality cleaning <br> for your home
             </h1>
             <p
-                class="text-[15px] md:text-[17px] leading-6 md:leading-7 text-[#6E6C83] mb-6 lg:mb-9 max-w-[470px] mx-auto lg:mx-0">
-                Condimentum mauris sit cursus amet id non
-                neque pharetra
+                class="text-[15px] md:text-[17px] leading-6 md:leading-7 text-[#6E6C83] mb-6 lg:mb-9 max-w-117.5 mx-auto lg:mx-0">
+                Condimentum mauris sit cursus amet id non neque pharetra
                 nulla ornare sed facilisis senectus dapibus nibh
-                ultrices eget suscipit aliquet et nulla magna lacus penatibus.</p>
+                ultrices eget suscipit aliquet et nulla magna lacus penatibus.
+            </p>
             <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center lg:justify-start">
-                <button class="navbtn">Get a free quote</button>
+                <button class="aboutbtn">Get a free quote</button>
                 <div class="flex items-center gap-3">
                     <a href="tel:+(414) 567 - 2109"
                         class="flex items-center gap-4 cursor-pointer hover:opacity-80 transition-opacity">
@@ -94,66 +92,159 @@
                 </div>
             </div>
         </div>
-        <div class="flex-1 flex justify-center items-center">
+
+        <div class="flex-1 flex justify-end items-center">
             <img src="./img/aboutimg.png" alt="Cleaning X" class="max-w-full h-auto">
         </div>
     </section>
-    <!-- about section -->
+
     <section id="about" class="py-12 md:py-16 lg:py-20">
         <div class="my-container">
             <div class="flex flex-col items-center text-center mb-10 md:mb-14 lg:mb-16">
                 <h2
                     class="font-bold text-[28px] md:text-[36px] lg:text-[48px] text-[#211F54] leading-9 md:leading-11.5 lg:leading-14.5 mb-3 md:mb-4">
-                    About Us</h2>
+                    About Us
+                </h2>
                 <p
                     class="text-[#6E7191] font-normal text-[16px] md:text-[18px] lg:text-[21px] leading-7 md:leading-7.5 max-w-150">
                     Sagittis nibh scelerisque vitae eget vulputate sem elementum sed
-                    neque nisi felis non ultrices massa id egestas quam velit pretium nu.</p>
+                    neque nisi felis non ultrices massa id egestas quam velit pretium nu.
+                </p>
             </div>
-            <!-- card-->
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8">
-                <div class="flex flex-col items-center text-center px-4">
+                <div class="about-card flex flex-col items-center text-center px-4">
                     <img src="./img/about_calendar.svg" alt="Schedule online" class="mb-6 md:mb-8 lg:mb-10">
                     <h5
                         class="font-bold text-[20px] md:text-[24px] lg:text-[28px] leading-8 lg:leading-9 text-[#211F54]">
-                        1. Schedule online</h5>
+                        1. Schedule online
+                    </h5>
                     <p
                         class="font-normal text-[16px] md:text-[18px] lg:text-[21px] leading-7 md:leading-7.5 text-[#6E7191] mt-3 md:mt-4">
-                        Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n.</p>
+                        Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n.
+                    </p>
                 </div>
-                <div class="flex flex-col items-center text-center px-4">
+
+                <div class="about-card flex flex-col items-center text-center px-4">
                     <img src="./img/aboutcard.svg" alt="Pay online easily" class="mb-6 md:mb-8 lg:mb-10">
                     <h5
                         class="font-bold text-[20px] md:text-[24px] lg:text-[28px] leading-8 lg:leading-9 text-[#211F54]">
-                        2. Pay online easily</h5>
+                        2. Pay online easily
+                    </h5>
                     <p
                         class="font-normal text-[16px] md:text-[18px] lg:text-[21px] leading-7 md:leading-7.5 text-[#6E7191] mt-3 md:mt-4">
-                        Vitae ut accumsan blandit ullamcorperolm suscipit dui gravida amet at nunc.</p>
+                        Vitae ut accumsan blandit ullamcorperolm suscipit dui gravida amet at nunc.
+                    </p>
                 </div>
-                <div class="flex flex-col items-center text-center px-4">
+
+                <div class="about-card flex flex-col items-center text-center px-4">
                     <img src="./img/aboutcar.svg" alt="Get your house cleaned" class="mb-6 md:mb-8 lg:mb-10">
                     <h5
                         class="font-bold text-[20px] md:text-[24px] lg:text-[28px] leading-8 lg:leading-9 text-[#211F54]">
-                        3. Get your house cleaned</h5>
+                        3. Get your house cleaned
+                    </h5>
                     <p
                         class="font-normal text-[16px] md:text-[18px] lg:text-[21px] leading-7 md:leading-7.5 text-[#6E7191] mt-3 md:mt-4">
-                        Nunc maecenas sollicitudin metus tellus mattis sed porttitor cursus eleifend.</p>
+                        Nunc maecenas sollicitudin metus tellus mattis sed porttitor cursus eleifend.
+                    </p>
                 </div>
             </div>
+
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-7 mt-10 md:mt-14">
-                <button class="navbtn">Get a free quote</button>
+                <button class="aboutbtn">Get a free quote</button>
                 <button
-                    class="font-normal border border-[#EFF0F6] px-7 py-3 rounded-xl cursor-pointer text-[18px] leading-5 text-[#211F54] hover:bg-[#F7F7FC] transition-colors">Explore
-                    services</button>
+                    class="font-normal border border-[#EFF0F6] px-7 py-3 rounded-xl cursor-pointer text-[18px] leading-5 text-[#211F54] hover:bg-[#F7F7FC] transition-colors">
+                    Explore services
+                </button>
             </div>
         </div>
     </section>
-    <!-- <section id="Services" class="w-full h-screen"></section>
-    <section id="articles" class="w-full h-screen"></section>
-    <section id="contact" class="w-full h-screen"></section> -->
+    <section id="service" class="my-container py-30 px-6 mb-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-16">
+            <div>
+                <h2 class="text-4xl font-bold text-[#211F54]">Our Services</h2>
+            </div>
+            <button
+                class="w-50 h-13.5 font-normal border border-[#EFF0F6] rounded-xl cursor-pointer text-[18px] text-[#211F54] hover:bg-[#ececef]">
+                Explore services
+            </button>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div
+                class="border p-10 cursor-pointer border-[#14142B0A] rounded-[30px] text-center hover:shadow-2xl transition">
+                <img src="./img/home.svg" class="w-24 mx-auto mb-6">
+                <h4 class="text-3.5  font-bold text-[#211F54]">House Cleaning</h4>
+                <p class="font-normal text-5.25 leading-7.5">Lorem ipsum dolor sit amet <br> consecte tur adipiscing
+                    elit <br>
+                    semper dalaracc lacus vel <br>
+                    facilisis volutpat est.</p>
+            </div>
+            <div
+                class="border p-10 cursor-pointer border-[#14142B0A] rounded-[30px] text-center hover:shadow-2xl transition">
+                <img src="./img/bino.svg" class="w-24 mx-auto mb-6">
+                <h4 class="text-3.5  font-bold text-[#211F54]">Office cleaning</h4>
+                <p class="font-normal text-5.25 leading-7.5">Lorem ipsum dolor sit amet <br> consecte tur adipiscing
+                    elit <br>
+                    semper dalaracc lacus vel <br>
+                    facilisis volutpat est.</p>
+            </div>
+
+            <div
+                class="border p-10 cursor-pointer border-[#14142B0A] rounded-[30px] text-center hover:shadow-2xl transition">
+                <img src="./img/fabrika.svg" class="w-24 mx-auto mb-6">
+                <h4 class="text-3.5  font-bold text-[#211F54]">Industrial cleaning</h4>
+                <p class="font-normal text-5.25 leading-7.5">Lorem ipsum dolor sit amet <br> consecte tur adipiscing
+                    elit <br>
+                    semper dalaracc lacus vel <br>
+                    facilisis volutpat est.</p>
+            </div>
+        </div>
+    </section>
+    <section class="my-container">
+        <div class="bg-[#211F54] rounded-[40px] overflow-hidden flex flex-col md:flex-row items-center">
+
+            <div class="md:w-1/2 w-full h-full">
+                <img src="./img/article.png"
+                    alt="Sanitization" class="w-full h-full object-cover">
+            </div>
+
+            <div class="md:w-1/2 w-full p-10 md:p-20 text-[#FFFFFF]">
+                <h5 class="text-[16px] font-bold tracking-[2px] uppercase mb-4">
+                    Covid-19 Sanitization
+                </h5>
+                <h2 class="text-[48px] md:text--[6] text-[#FFFFFF] font-bold leading-14.5">
+                    We follow guidelines to keep you safe from the COVID-19 virus
+                </h2>
+                <p class="text-[18px] leading-relaxed mb-10">
+                    Lobortis mattis odio leo eget mauris met aliquet semper molestie sollicitudin congue massa mauris
+                    lectus.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center gap-8">
+                    <button class="aboutbtn">Get a free quote</button>
+                    <div class="flex items-center gap-3">
+                        <a href="tel:+(414) 567 - 2109"
+                            class="flex items-center gap-4 cursor-pointer hover:opacity-80 transition-opacity">
+                            <div
+                                class="bg-white border border-[#DCDDEB] rounded-[50%] p-3.5 shadow-md flex items-center justify-center">
+                                <img src="./img/telfon.svg" alt="telfon" class="w-6 h-6">
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-[12px] font-normal text-[#6E6C83] uppercase tracking-wide">CALL US
+                                    NOW</span>
+                                <span class="text-[18px] font-bold text-[#FFFFFF] leading-6">(414) 567 - 2109</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <a id="srcollbtn"
-        class="srcollbtn w-17.5 h-17.5  rounded-[50%] bg-[#0075FF] fixed left-5 bottom-5 flex items-center justify-center"
+        class="srcollbtn w-17.5 h-17.5 rounded-[50%] bg-[#0075FF] fixed font-bold text-[18px] left-5 bottom-5 flex items-center justify-center"
         href="#">
         <i class="fa-solid fa-angle-up text-white text-[30px]"></i>
     </a>

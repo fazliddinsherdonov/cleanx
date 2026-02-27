@@ -1,8 +1,16 @@
 .my-container {
     max-width: 1250px;
-    padding: 0 10px;
+    padding: 60px 10px;
     margin: 0 auto;
 }
+
+.home-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 0;
+}
+
 
 html,
 body {
@@ -40,10 +48,10 @@ body {
 .mobile-menu {
     transition: .3s linear;
     position: fixed;
-    background-color: greenyellow;
+    background-color: white;
     width: 100%;
     height: auto;
-    transform: translateY(-140%);
+    transform: translateY(-190%);
     z-index: 0;
     box-shadow: #14142B0A;
     border-radius: 2%;
@@ -51,4 +59,45 @@ body {
 
 .mobile-menu.active {
     transform: translateY(0);
+}
+
+.aboutbtn {
+    background-color: #0075FF;
+    border-radius: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 13px 22px;
+    border: none;
+    cursor: pointer;
+}
+
+.aboutbtn:hover {
+    background-color: #3f72b1aa;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 880px) {
+    .home-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .aboutbtn {
+        font-size: 16px;
+        padding: 20px 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .aboutbtn {
+        font-size: 14px;
+        padding: 12px 18px;
+        border-radius: 12px;
+    }
 }

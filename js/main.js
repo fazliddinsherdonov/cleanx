@@ -12,13 +12,10 @@ window.addEventListener("scroll", function () {
     }
 });
 
-window.addEventListener("scroll", function () {
-    if (window.menuBtn <= 80) {
-        menuBtn.classList.remove("active");
-    } else {
-        menuBtn.classList.add("active");
-    }
-});
 menuBtn.addEventListener("click", function () {
     mobileMenu.classList.toggle("active");
+});
+
+window.addEventListener("scroll", function () {
+    mobileMenu.classList.remove("active");
 });
